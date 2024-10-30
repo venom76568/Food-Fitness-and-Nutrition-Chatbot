@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Recipe Assistant</title>
+  </head>
+  <body>
+    <h1>Food Recipe Assistant</h1>
+
+    <!-- Guidelines Section -->
+    <section id="guidelines">
+      <h2>How to Use the Assistant</h2>
+      <p>
+        Welcome! This assistant specializes in food recipes, nutrition, fitness,
+        and health. Here’s how you can interact:
+      </p>
+      <ul>
+        <li>
+          <strong>Ask your question:</strong> Type a question related to food,
+          recipes, nutrition, or health in the input box.
+        </li>
+        <li>
+          <strong>Get answers:</strong> The assistant will respond with helpful
+          advice or recipes.
+        </li>
+        <li>
+          <strong>Ask follow-up questions:</strong> You can ask follow-ups, and
+          the assistant will continue the conversation contextually.
+        </li>
+        <li>
+          <strong>Start a new chat:</strong> If you want to begin a fresh
+          conversation, click the "New Chat" button to clear the previous
+          context.
+        </li>
+      </ul>
+      <p>Example questions you can ask (click to get an instant answer):</p>
+      <ul id="exampleQuestions">
+        <li
+          onclick="handleExampleClick('Can you give me a healthy breakfast recipe?')"
+        >
+          Can you give me a healthy breakfast recipe?
+        </li>
+        <li onclick="handleExampleClick('What are some protein-rich foods?')">
+          What are some protein-rich foods?
+        </li>
+        <li
+          onclick="handleExampleClick('How can I maintain energy levels throughout the day?')"
+        >
+          How can I maintain energy levels throughout the day?
+        </li>
+      </ul>
+    </section>
+
+    <!-- Chat Interface -->
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Ask about a food recipe, nutrition, or health..."
+    />
+    <button id="searchButton">Search</button>
+    <button id="newChatButton">New Chat</button>
+    <div id="response"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
